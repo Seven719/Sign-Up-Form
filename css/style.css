@@ -1,0 +1,37 @@
+:root {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/neom-r4ZSR0cKJw8-unsplash.jpg")
+}
+
+#form-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Nunito', Roboto, sans-serif;
+}
+
+#form-box {
+    width: 740px;
+    height: 450px;
+    background: #444444;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-content {
+    color: white;
+    margin: 40px;
+}
