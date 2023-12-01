@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
-        <script src="javascripts.js"></script>
+        <script src="javascript.js" defer></script>
         <title>Sign Up Form</title>
     </head>
     <body>
@@ -16,17 +16,22 @@
                 <div id="form-content">
                     <form spellcheck="false" autocomplete="off" method="post">
                         <legend>Sign Up</legend>
+                        
+                        <label for="name"></label>
                         <input type="text" id="name" name="Name" placeholder="Full name" required>
 
+                        <label for="email"></label>
                         <input type="email" id="email" name="Email" placeholder="Email" required>
 
+                        <label for="password"></label>
                         <input type="password" id="password" name="Password" placeholder="Password" required>
  
+                        <label for="confirm-password"></label>
                         <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
                         <small id="terms">
                             By signing up, you are agreeing to our <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a>
                         </small>
-                        <button type="submit" id="btn-continue"'>Continue</button>
+                        <button type="submit" id="btn-continue">Continue</button>
                     </form> 
                 </div>
             </div>
