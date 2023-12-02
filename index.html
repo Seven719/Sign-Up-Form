@@ -14,24 +14,24 @@
         <div id="form-container">
             <div id="form-box">
                 <div id="form-content">
-                    <form spellcheck="false" autocomplete="off" method="post">
+                    <form spellcheck="false" autocomplete="off" method="post" onsubmit="return submitBtn()">
                         <legend>Sign Up</legend>
                         
-                        <label for="name"></label>
                         <input type="text" id="name" name="Name" placeholder="Full name" required>
 
-                        <label for="email"></label>
                         <input type="email" id="email" name="Email" placeholder="Email" required>
 
-                        <label for="password"></label>
                         <input type="password" id="password" name="Password" placeholder="Password" required>
  
-                        <label for="confirm-password"></label>
                         <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
                         <small id="terms">
                             By signing up, you are agreeing to our <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a>
                         </small>
                         <button type="submit" id="btn-continue">Continue</button>
+                        <small id="login">
+                            Already have an account? <a href="#">Login</a>
+                        </small>
+                        <p>Background photo by <a href="https://unsplash.com/@neom?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">NEOM</a> on <a href="https://unsplash.com/photos/a-desert-landscape-with-a-mountain-range-in-the-background-r4ZSR0cKJw8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
                     </form> 
                 </div>
             </div>
