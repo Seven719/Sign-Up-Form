@@ -7,7 +7,7 @@ let sameEmail = false;
 
 confirmPassword.addEventListener('keyup', function () {
     if(password.value == confirmPassword.value) {
-        same = true;
+        samePassword = true;
         password.style.textDecorationColor = 'green';
         confirmPassword.style.textDecorationColor = 'green';
     }
@@ -25,3 +25,20 @@ email.addEventListener('keyup', function () {
         email.style.textDecorationColor = 'green';
     }
 })
+
+function submitBtn() {
+    if(samePassword != true) {
+        shakePasswords();
+        return false;
+    }
+    return true;
+}
+
+function shakePasswords() {
+    password.classList.add('shake');
+    confirmPassword.classList.add('shake');
+    setTimeout(function() {
+        password.classList.remove('shake');
+        confirmPassword.classList.remove('shake');
+    }, 300)
+}
