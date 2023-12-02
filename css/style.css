@@ -1,5 +1,5 @@
-:root {
-    font-family: 'Nunito', Roboto, sans-serif;
+html {
+    font-family: Nunito, Roboto, sans-serif;
     height: 100%;
     display: flex;
     align-items: center;
@@ -91,8 +91,26 @@ legend {
     cursor:pointer;
 }
 
-#terms {
+small {
     font-size: 15px;
     margin-top: 10px;
     margin-bottom: 15px;
+}
+
+@keyframes shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
+
+.shake {
+    animation: shaking 0.2s infinite;
+}
+
+p {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
 }
